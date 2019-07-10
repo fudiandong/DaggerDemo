@@ -8,9 +8,15 @@ import android.os.Bundle;
 // https://www.bilibili.com/video/av43905065?p=3
 public class MainActivity extends AppCompatActivity {
 
+    private UserManger userManger;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        userManger = new UserManger();
+        userManger.register();
+
     }
 }
